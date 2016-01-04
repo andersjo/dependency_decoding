@@ -2,10 +2,8 @@
 
 This package wraps the Chu-Liu-Edmonds maximum spanning algorithm from TurboParser for use within Python.
  
-It provides a function `chu_liu_edmonds` which accepts a $N \times N+1$ score matrix as argument.
-The $i,j$-th cell is the score for the edge j->i. In other words, a row gives the scores for the different heads of a dependent.
-
-Scores for root attachment are placed in the final column. Attachments to root are reported as `-1`. 
+It provides a function `chu_liu_edmonds` which accepts a $N \times N$ score matrix as argument, where N is the sentence length, including the artificial root node.
+The $i,j$-th cell is the score for the edge j->i. In other words, a row gives the scores for the different heads of a dependent. 
  
 Example usage:
 
